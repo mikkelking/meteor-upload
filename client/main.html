@@ -1,0 +1,20 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> up}}
+  {{> ups}}
+
+  <hr>
+  {{> dropzone contentType='images' fileTypes='.jpg' multiple=true}}
+</body>
+
+<template name="up">
+    {{> upload_bootstrap }}
+</template>
+<template name="ups">
+    {{> upload_semanticUI }}
+</template>
